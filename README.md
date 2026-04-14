@@ -1,5 +1,5 @@
 # RISC-V Flex (RVflex)
-Proposed RISC-V extension for bitwidth-agnostic binaries: Single binary, serves both RV32 and RV64
+Proposed RISC-V extension for bitwidth-agnostic binaries: Single binary, serves both RV32 and RV64 + Exclusive: delivering promotable pointers
 
  * `W`-prefixed instruction (e.g., `ADDW`, `SUBW`, `SLLW`): defined in RV64 for explicit 32-bit operations. Under RVflex, these are treated as regular 32-bit operations on RV32, requiring no special handling. This allows the same binary to use native-width operations via `ADD`/`ADDI` and fixed-width 32-bit operations via W-prefixed instructions on both RV32 and RV64.
  * `LXS`: Load `XLEN`-bit data with scaled index:
